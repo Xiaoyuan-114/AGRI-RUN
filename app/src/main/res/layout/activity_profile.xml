@@ -135,8 +135,12 @@
                     android:layout_marginStart="@dimen/inset_nav"
                     android:background="@color/fm_border" />
                 <LinearLayout
+                    android:id="@+id/rowPendingPower"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/touch_min"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
                     <ImageView
@@ -238,6 +242,13 @@
                         android:textSize="@dimen/text_caption" />
                 </LinearLayout>
             </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                android:text="@string/profile_probe_hint"
+                android:textColor="@color/fm_link"
+                android:textSize="@dimen/text_caption" />
         </LinearLayout>
     </ScrollView>
     <include

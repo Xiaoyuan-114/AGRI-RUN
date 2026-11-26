@@ -78,4 +78,20 @@
     <string name="profile_pending_card">校园卡</string>
     <string name="profile_pending_library">图书馆预约</string>
     <string name="profile_pending_status">未接入</string>
+    <string name="profile_probe_hint">点「宿舍电量」可打开取证页（试验性，不保存密码）</string>
+
+    <!-- 宿舍电量取证页：只观察学校 H5 的接口形态，不写绑定信息 -->
+    <string name="power_probe_title">电量取证（试验）</string>
+    <string name="power_probe_hint">在学校官方页面里自己登录，本页不读表单、不存密码。记录只保留接口地址、状态码、请求头名字与响应结构，凭据只记名字与长度。登录后进到电量页，再点「复制记录」。</string>
+    <string name="power_probe_copy">复制记录</string>
+    <string name="power_probe_clear">清空</string>
+    <string name="power_probe_url_hint">粘贴要打开的地址</string>
+    <string name="power_probe_go">打开</string>
+    <string name="power_probe_ua_default">UA：默认</string>
+    <string name="power_probe_ua_wechat">UA：微信</string>
+    <string name="power_probe_ua_alipay">UA：支付宝</string>
+    <string name="power_probe_ua_note">已切换 UA 并重载：厂商若只嗅探 UA 就会放行，若真要授权仍会拦</string>
+    <string name="power_probe_count">已记录 %1$d 条</string>
+    <string name="power_probe_copied">已复制到剪贴板</string>
+    <string name="power_probe_empty">还没有记录，先登录并进入电量页</string>
 </resources>

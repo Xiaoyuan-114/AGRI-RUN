@@ -106,6 +106,13 @@
             android:theme="@style/Theme.RouteWorkshop.Home" />
 
         <activity
+            android:name=".ui.PowerProbeActivity"
+            android:exported="false"
+            android:label="@string/power_probe_title"
+            android:theme="@style/Theme.RouteWorkshop.Home"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
             android:name=".ui.SettingsCheckActivity"
             android:exported="false"
             android:label="@string/settings_title"

@@ -34,7 +34,10 @@ public class ProfileActivity extends AppCompatActivity {
             return insets;
         });
         binding.buttonProfileAccount.setOnClickListener(v -> openAccount());
+        binding.rowPendingPower.setOnClickListener(v ->
+                startActivity(new Intent(this, PowerProbeActivity.class)));
         FinmoriMotion.press(binding.buttonProfileAccount);
+        FinmoriMotion.press(binding.rowPendingPower);
         FinmoriNav.bind(this, binding.bottomNav, FinmoriNav.Tab.PROFILE);
     }
 

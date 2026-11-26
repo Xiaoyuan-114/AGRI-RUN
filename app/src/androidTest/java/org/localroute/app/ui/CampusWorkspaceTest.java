@@ -74,6 +74,13 @@ public class CampusWorkspaceTest {
         awaitActivity(MainActivity.class);
         onView(withId(R.id.textHomeGreeting)).check(matches(isDisplayed()));
     }
+    @Test public void profileOpensPowerProbe() {
+        ActivityScenario.launch(ProfileActivity.class);
+        onView(withId(R.id.rowPendingPower)).perform(scrollTo(), click());
+        awaitActivity(PowerProbeActivity.class);
+        onView(withId(R.id.probeWeb)).check(matches(isDisplayed()));
+        onView(withId(R.id.buttonProbeCopy)).check(matches(isDisplayed()));
+    }
     @Test public void functionsTimetableEntryOpensWeekView() {
         try (ActivityScenario<FunctionsActivity> functions =
                      ActivityScenario.launch(FunctionsActivity.class)) {

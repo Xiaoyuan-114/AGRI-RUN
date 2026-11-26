@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fm_surface">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/fm_surface"
+        app:title="@string/power_probe_title"
+        app:titleTextColor="@color/fm_text" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/space_4xl"
+        android:paddingBottom="@dimen/space_md"
+        android:text="@string/power_probe_hint"
+        android:textColor="@color/fm_muted"
+        android:textSize="@dimen/text_caption" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/space_4xl"
+        android:paddingBottom="@dimen/space_sm">
+        <EditText
+            android:id="@+id/probeUrl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/power_probe_url_hint"
+            android:importantForAutofill="no"
+            android:inputType="textUri"
+            android:maxLines="1"
+            android:textSize="@dimen/text_caption" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonProbeGo"
+            style="@style/Widget.Unloop.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_md"
+            android:text="@string/power_probe_go" />
+    </LinearLayout>
+    <WebView
+        android:id="@+id/probeWeb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <TextView
+        android:id="@+id/textProbeCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/space_4xl"
+        android:paddingTop="@dimen/space_md"
+        android:textColor="@color/fm_text_secondary"
+        android:textSize="@dimen/text_caption" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/space_4xl"
+        android:paddingVertical="@dimen/space_md">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonProbeCopy"
+            style="@style/Widget.Unloop.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/power_probe_copy" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonProbeClear"
+            style="@style/Widget.Unloop.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_md"
+            android:layout_weight="1"
+            android:text="@string/power_probe_clear" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonProbeUa"
+            style="@style/Widget.Unloop.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_md"
+            android:layout_weight="1"
+            android:text="@string/power_probe_ua_default" />
+    </LinearLayout>
+</LinearLayout>
